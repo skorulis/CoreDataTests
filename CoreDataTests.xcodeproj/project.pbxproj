@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAF7E92C21A3C0AA140E3728 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9850D19B4461BD4ED96D2964 /* libPods.a */; };
 		FA8724B61B324B8500CFDF94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724B51B324B8500CFDF94 /* main.m */; };
 		FA8724B91B324B8500CFDF94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724B81B324B8500CFDF94 /* AppDelegate.m */; };
 		FA8724BC1B324B8500CFDF94 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724BB1B324B8500CFDF94 /* ViewController.m */; };
 		FA8724C11B324B8500CFDF94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8724C01B324B8500CFDF94 /* Images.xcassets */; };
 		FA8724C41B324B8500CFDF94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8724C21B324B8500CFDF94 /* LaunchScreen.xib */; };
 		FA8724D01B324B8500CFDF94 /* CoreDataTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724CF1B324B8500CFDF94 /* CoreDataTestsTests.m */; };
-		FA8724DB1B324BEB00CFDF94 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA8724D91B324BEB00CFDF94 /* Model.xcdatamodeld */; };
+		FA8724E51B324D0000CFDF94 /* _NumberEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724E01B324D0000CFDF94 /* _NumberEntity.m */; };
+		FA8724E61B324D0000CFDF94 /* NumberEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724E21B324D0000CFDF94 /* NumberEntity.m */; };
+		FA8724E71B324D0000CFDF94 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA8724E31B324D0000CFDF94 /* Model.xcdatamodeld */; };
+		FA8724EB1B324DBD00CFDF94 /* DataStackService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8724EA1B324DBD00CFDF94 /* DataStackService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B37F494FAE45845B4AE12D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9850D19B4461BD4ED96D2964 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F099359624413DECDC161ED6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA8724B01B324B8500CFDF94 /* CoreDataTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8724B41B324B8500CFDF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA8724B51B324B8500CFDF94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,7 +46,13 @@
 		FA8724C91B324B8500CFDF94 /* CoreDataTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8724CE1B324B8500CFDF94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA8724CF1B324B8500CFDF94 /* CoreDataTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTestsTests.m; sourceTree = "<group>"; };
-		FA8724DA1B324BEB00CFDF94 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FA8724DF1B324D0000CFDF94 /* _NumberEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _NumberEntity.h; sourceTree = "<group>"; };
+		FA8724E01B324D0000CFDF94 /* _NumberEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _NumberEntity.m; sourceTree = "<group>"; };
+		FA8724E11B324D0000CFDF94 /* NumberEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberEntity.h; sourceTree = "<group>"; };
+		FA8724E21B324D0000CFDF94 /* NumberEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberEntity.m; sourceTree = "<group>"; };
+		FA8724E41B324D0000CFDF94 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FA8724E91B324DBD00CFDF94 /* DataStackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStackService.h; sourceTree = "<group>"; };
+		FA8724EA1B324DBD00CFDF94 /* DataStackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStackService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF7E92C21A3C0AA140E3728 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67EBAA25D6E613DDBCD4C223 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B37F494FAE45845B4AE12D1 /* Pods.debug.xcconfig */,
+				F099359624413DECDC161ED6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ADBBD54C3D22D4025547B0A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9850D19B4461BD4ED96D2964 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA8724A71B324B8500CFDF94 = {
 			isa = PBXGroup;
 			children = (
 				FA8724B21B324B8500CFDF94 /* CoreDataTests */,
 				FA8724CC1B324B8500CFDF94 /* CoreDataTestsTests */,
 				FA8724B11B324B8500CFDF94 /* Products */,
+				67EBAA25D6E613DDBCD4C223 /* Pods */,
+				ADBBD54C3D22D4025547B0A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +114,8 @@
 		FA8724B21B324B8500CFDF94 /* CoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA8724E81B324DBD00CFDF94 /* service */,
+				FA8724DC1B324D0000CFDF94 /* model */,
 				FA8724B71B324B8500CFDF94 /* AppDelegate.h */,
 				FA8724B81B324B8500CFDF94 /* AppDelegate.m */,
 				FA8724BA1B324B8500CFDF94 /* ViewController.h */,
@@ -88,7 +123,6 @@
 				FA8724C01B324B8500CFDF94 /* Images.xcassets */,
 				FA8724C21B324B8500CFDF94 /* LaunchScreen.xib */,
 				FA8724B31B324B8500CFDF94 /* Supporting Files */,
-				FA8724D91B324BEB00CFDF94 /* Model.xcdatamodeld */,
 			);
 			path = CoreDataTests;
 			sourceTree = "<group>";
@@ -119,6 +153,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FA8724DC1B324D0000CFDF94 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FA8724DD1B324D0000CFDF94 /* entities */,
+				FA8724E31B324D0000CFDF94 /* Model.xcdatamodeld */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FA8724DD1B324D0000CFDF94 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				FA8724DE1B324D0000CFDF94 /* machine */,
+				FA8724E11B324D0000CFDF94 /* NumberEntity.h */,
+				FA8724E21B324D0000CFDF94 /* NumberEntity.m */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		FA8724DE1B324D0000CFDF94 /* machine */ = {
+			isa = PBXGroup;
+			children = (
+				FA8724DF1B324D0000CFDF94 /* _NumberEntity.h */,
+				FA8724E01B324D0000CFDF94 /* _NumberEntity.m */,
+			);
+			path = machine;
+			sourceTree = "<group>";
+		};
+		FA8724E81B324DBD00CFDF94 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				FA8724E91B324DBD00CFDF94 /* DataStackService.h */,
+				FA8724EA1B324DBD00CFDF94 /* DataStackService.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA8724D31B324B8500CFDF94 /* Build configuration list for PBXNativeTarget "CoreDataTests" */;
 			buildPhases = (
+				09C2DB51C8531161BD262530 /* Check Pods Manifest.lock */,
 				FA8724AC1B324B8500CFDF94 /* Sources */,
 				FA8724AD1B324B8500CFDF94 /* Frameworks */,
 				FA8724AE1B324B8500CFDF94 /* Resources */,
+				EB174D2C2B58B8E7D4985CA5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +286,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09C2DB51C8531161BD262530 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB174D2C2B58B8E7D4985CA5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA8724AC1B324B8500CFDF94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -220,8 +326,11 @@
 			files = (
 				FA8724BC1B324B8500CFDF94 /* ViewController.m in Sources */,
 				FA8724B91B324B8500CFDF94 /* AppDelegate.m in Sources */,
+				FA8724EB1B324DBD00CFDF94 /* DataStackService.m in Sources */,
 				FA8724B61B324B8500CFDF94 /* main.m in Sources */,
-				FA8724DB1B324BEB00CFDF94 /* Model.xcdatamodeld in Sources */,
+				FA8724E61B324D0000CFDF94 /* NumberEntity.m in Sources */,
+				FA8724E51B324D0000CFDF94 /* _NumberEntity.m in Sources */,
+				FA8724E71B324D0000CFDF94 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +448,7 @@
 		};
 		FA8724D41B324B8500CFDF94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B37F494FAE45845B4AE12D1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataTests/Info.plist;
@@ -350,6 +460,7 @@
 		};
 		FA8724D51B324B8500CFDF94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F099359624413DECDC161ED6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoreDataTests/Info.plist;
@@ -412,6 +523,7 @@
 				FA8724D51B324B8500CFDF94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA8724D61B324B8500CFDF94 /* Build configuration list for PBXNativeTarget "CoreDataTestsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,18 +532,18 @@
 				FA8724D81B324B8500CFDF94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FA8724D91B324BEB00CFDF94 /* Model.xcdatamodeld */ = {
+		FA8724E31B324D0000CFDF94 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FA8724DA1B324BEB00CFDF94 /* Model.xcdatamodel */,
+				FA8724E41B324D0000CFDF94 /* Model.xcdatamodel */,
 			);
-			currentVersion = FA8724DA1B324BEB00CFDF94 /* Model.xcdatamodel */;
-			name = Model.xcdatamodeld;
-			path = model/Model.xcdatamodeld;
+			currentVersion = FA8724E41B324D0000CFDF94 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

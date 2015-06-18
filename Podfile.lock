@@ -1,0 +1,13 @@
+PODS:
+  - TwistedOakCollapsingFutures (1.0.0):
+    - UnionFind (~> 1.0)
+  - UnionFind (1.0.1)
+
+DEPENDENCIES:
+  - TwistedOakCollapsingFutures
+
+SPEC CHECKSUMS:
+  TwistedOakCollapsingFutures: f359b90f203e9ab13dfb92c9ff41842a7fe1cd0c
+  UnionFind: c33be5adb12983981d6e827ea94fc7f9e370f52d
+
+COCOAPODS: 0.36.0

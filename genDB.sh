@@ -1,0 +1,1 @@
+mogenerator -m CoreDataTests/model/Model.xcdatamodeld/Model.xcdatamodel/ -M CoreDataTests/model/entities/machine -H CoreDataTests/model/entities/ --template-var arc=true
