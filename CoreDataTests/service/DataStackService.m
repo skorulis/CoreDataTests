@@ -2,6 +2,7 @@
 
 @import CoreData;
 #import "DataStackService.h"
+#import <CollapsingFutures.h>
 
 @interface DataStackService ()
 
@@ -39,7 +40,8 @@
 - (NSManagedObjectContext*) mainContext {
     if(!_mainContext) {
         _mainContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-        _mainContext.parentContext = self.writerContext;
+        //_mainContext.parentContext = self.writerContext;
+        _mainContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
         _mainContext.mergePolicy = NSOverwriteMergePolicy; //AJS - not sure if I want to do this
     }
     return _mainContext;
@@ -158,7 +160,7 @@
         }
         NSString* stack = [[NSThread callStackSymbols] componentsJoinedByString:@"\n"];
         NSString* s = [NSString stringWithFormat:@"---> <core data>: saving for context %@ failed.\n ---> Errors:\n%@ ---> Stack:\n%@", context, error,stack];
-        [LELog log:s];
+        NSLog(@"%@",s);
         [NSException raise:@"core data error" format:@"%@",s];
         [futureSource trySetFailure:error];
     }
@@ -174,7 +176,7 @@
     NSError * error;
     NSArray * all = [context executeFetchRequest:fetch error:&error];
     if(error) {
-        [LELog log:@"Error deleting entities %@",entity];
+        NSLog(@"Error deleting entities %@",entity);
         return;
     }
     

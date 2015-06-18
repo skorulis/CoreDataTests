@@ -3,6 +3,7 @@
 @import Foundation;
 @import CoreData;
 
+@class TOCFuture;
 
 @interface DataStackService : NSObject
 
@@ -11,7 +12,7 @@
 @property (nonatomic, readonly) NSManagedObjectModel *managedObjectModel;
 
 - (NSManagedObjectContext *)temporaryContext;
-- (void)saveMainToDisk;
+- (TOCFuture*)saveMainToDisk;
 - (instancetype) initWithDBName:(NSString*)dbName clearDB:(BOOL)clearDB;
 - (void) deleteAll:(NSEntityDescription*)entity context:(NSManagedObjectContext*)context;
 
